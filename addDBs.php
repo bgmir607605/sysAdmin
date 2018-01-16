@@ -6,7 +6,6 @@ $query = "select * from users where id > 50";
 
 $mysqli = new mysqli('localhost', 'root', $rootPass, 'server');
 $mysqli->query("set names utf8");
-$query = "select * from users where id > 50";
 $results = $mysqli->query($query);
 
 while($row = $results->fetch_assoc()){
